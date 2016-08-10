@@ -1,0 +1,2 @@
+json.extract! agent, :id, :first_name, :middle_name, :last_name, :picture, :bio, :phone, :email, :website, :count_click_to_contact, :count_click_to_accept, :count_closed, :created_at, :updated_at
+json.url agent_url(agent, format: :json)

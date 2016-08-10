@@ -1,0 +1,33 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version 2.2.4-p230 (x86_64-darwin15)
+* Rails version 4.2.6 application starting in development on http://localhost:3000
+* RubyGems version 2.4.8
+
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+Database adapter	sqlite3
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* 2Mile Notes
+Application root	/Users/b/_programs/final_rails_project/furl
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
