@@ -5,3 +5,4 @@ class ApplicationController < ActionController::Base
 end
 
 #this is a comment
+#practicing git commit -m "text stuff here"
