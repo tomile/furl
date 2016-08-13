@@ -3,7 +3,3 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 end
-
-#this is a comment
-#practicing git commit -m "text stuff here"
-#practicing git with a new branch making-better

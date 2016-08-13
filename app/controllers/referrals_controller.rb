@@ -1,4 +1,5 @@
 class ReferralsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_referral, only: [:show, :edit, :update, :destroy]
 
   # GET /referrals
