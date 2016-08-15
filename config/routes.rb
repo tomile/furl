@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
+  get 'areas/find_zip'
+
   devise_for :users
   resources :notices
   resources :referrals
   resources :prospects
   resources :agents
+  #find these in rake routes
 
-  root to: "referrals#index" #I make referrals the "HOME" page
+  #root to: 'referrals#index' # all referrals the "HOME" page
+  root to: 'agents#index' # all agents the "HOME" page
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
