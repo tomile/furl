@@ -12,6 +12,10 @@ class AgentsController < ApplicationController
   def show
   end
 
+  def by_zip
+    #going to add stuff here. 
+  end
+
   # GET /agents/new
   def new
     @agent = Agent.new
