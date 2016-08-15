@@ -9,7 +9,7 @@
   <% @agents.each do |agent| %>
     <div class="col-xs-6 col-sm-4 col-md-3">
       <div class="thumbnail">
-        <img src="<%= agent.picture %>"> PICTURE help needed <br>
+        <img src="<%= agent.picture.thumb.url %>" alt="Agent Picture"><br>
         <div class="caption">
           <h3><%= agent.first_name %> <%= agent.last_name %></h3>
           <h3>About Me: <%= agent.bio %></h3>
