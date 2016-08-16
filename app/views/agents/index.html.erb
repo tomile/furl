@@ -3,22 +3,21 @@
 
 
 <h1>All Referral Agents</h1>
-<h3>I want to load a SEARCH by zip function here</h3>
 
 <div class="row">
   <% @agents.each do |agent| %>
     <div class="col-xs-6 col-sm-4 col-md-3">
-      <div class="thumbnail">
+      
         <img src="<%= agent.picture.thumb.url %>" alt="Agent Picture"><br>
         <div class="caption">
           <h3><%= agent.first_name %> <%= agent.last_name %></h3>
           <h3>About Me: <%= agent.bio %></h3>
-          <h6>Number: Contacted <%= agent.count_click_to_contact %></h6>
-          <h6>Number: Accepted <%= agent.count_click_to_accept %></h6>
-          <h6>Number: Closed <%= agent.count_closed %></h6>
+          <h6>Contacted <%= agent.count_click_to_contact %></h6>
+          <h6>Accepted <%= agent.count_click_to_accept %></h6>
+          <h6>Closed <%= agent.count_closed %></h6>
           <%= link_to "More Info for this agent", agent, class: "btn btn-default" %>
         </div>
-      </div>
+      
     </div> <!-- end of div class col-sm-3 -->
   <% end %>
 </div>
