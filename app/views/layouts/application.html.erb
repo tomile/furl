@@ -43,7 +43,7 @@
 		            <li><a href="#">New Referral</a></li>
 		            <li><a href="#">Logout</a></li>
 	          	<% else %>
-		            <li><a href="#">Sign Up</a></li>
+		            <li><%= link_to "Sign Up", new_user_registration_path %></li>
 		           	<li role="separator" class="divider"></li>
 		            <li><a href="#">Login</a></li>
 	          	<% end %>

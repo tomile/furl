@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   get 'areas/find_zip'
 
   devise_for :users
