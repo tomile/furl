@@ -4,10 +4,15 @@
 
 
 <h3>COUNTING</h3>
-<h4><%= @agents.count %> = number of records, number of agents</h4>
-<h4><%= number_of_pages = @agents.count / 3 + 1 %> = number of pages to display</h4>
-<h4><%= @agents.count % 3 %> = is Agents.count if 0, then count is divisible by 3</h4>
+<h4>We will display 9 agents per page</h4>
+<h4><%= number_of_agents = @agents.count %> = number of agents</h4>
+<h4><%= number_of_agents_on_last_page = number_of_agents % 9 %> = number of agents on last page. <br> if ZERO, then dont add 1 to "/9) + 1" to number_of_pages</h4> 
 
+<% if number_of_agents % 9 != 0 %>
+<h4><%= number_of_pages = number_of_agents / 9 + 1 %> = number of pages to display</h4>
+<% else %>
+<h4><%= number_of_pages = number_of_agents / 9 %> = number of pages to display</h4>
+<% end %>
 
 <nav aria-label="Page navigation">
   <ul class="pagination">
