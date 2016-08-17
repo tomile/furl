@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'devise'
 gem 'carrierwave', '~> 0.11.2'
 gem 'mini_magick', '~> 4.5', '>= 4.5.1'
-
+#gem 'paginate', '~> 4.0', '>= 4.0.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'

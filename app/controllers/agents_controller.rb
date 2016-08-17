@@ -5,6 +5,9 @@ class AgentsController < ApplicationController
   # GET /agents.json
   def index
     @agents = Agent.all
+    #sending them back to the index per page click
+    #will need to pass a param
+    
   end
 
   # GET /agents/1
