@@ -1,9 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>All Referral Agents</h1>
+<h1>A Network of Referral Agents</h1>
 
 
-<h3>HELP!</h3>
+<h3>COUNTING</h3>
+<h4><%= @agents.count %></h4>
+<h4><%= @agents.count / 10 %></h4>
+<h4><%= @agents.count % 10 %></h4>
+
+
 <nav aria-label="Page navigation">
   <ul class="pagination">
     <li>
@@ -23,7 +28,8 @@
     </li>
   </ul>
 </nav>
-<h3>/help!</h3>
+<h3>COUNTING</h3>
+
 
 <div class="row">
   <% @agents.each do |agent| %>
