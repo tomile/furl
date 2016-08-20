@@ -3,6 +3,8 @@ class Agent < ActiveRecord::Base
 	has_many :referrals_sent, class_name: 'Referral', foreign_key: :agent_sending_id
 	has_many :referrals_recieved, class_name: 'Referral', foreign_key: :agent_receiving_id
 	has_many :areas
+	has_many :reviews
+	has_many :notes
 
 	mount_uploader :picture, PictureUploader
 end

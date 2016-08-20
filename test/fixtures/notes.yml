@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  agent_id: 
+  referral_id: 
+  prospect_id: 
+
+two:
+  content: MyText
+  agent_id: 
+  referral_id: 
+  prospect_id: 
